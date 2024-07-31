@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const n = parseInt(process.argv[2]);
+const number = parseInt(process.argv[2]);
 if (!isNaN(number)) {
   for (let i = 0; i < number; i++) {
     console.log('X'.repeat(number));
