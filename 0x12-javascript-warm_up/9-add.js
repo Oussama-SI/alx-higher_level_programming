@@ -2,7 +2,7 @@
 const x = process.argv[2];
 const y = process.argv[3];
 
-function add (a,b) {
-  return a+b;
+function add (a, b) {
+  return a + b;
 }
-console.log(add(parseInt(x),parseInt(y)));
+console.log(add(parseInt(x), parseInt(y)));
