@@ -1,8 +1,13 @@
 #!/usr/bin/node
-const x = process.argv[2];
-/* a script that prints x times “C is fun” */
-if (isNaN(parseInt(x)) || x === undefined) {
-  console.log('Missing number of occurrences');
+const cool = 'C is fun';
+const number = parseInt(process.argv[2]);
+
+if (!isNaN(number)) {
+  let i = 0;
+  while (i < number) {
+    console.log(cool);
+    i++;
+  }
 } else {
-  for (let i = 0; i < parseInt(x); i++) { console.log('C is fun'); }
+  console.log('Missing number of occurrences');
 }
