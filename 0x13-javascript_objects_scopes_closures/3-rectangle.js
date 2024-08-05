@@ -4,7 +4,7 @@ class Rectangle {
   width;
   constructor (w, h) {
     if (w <= 0 || h <= 0) return;
-    if (isNaN(w) || isNaN(h)) return;
+    if (typeof w !== 'number' || typeof h !== 'number') return;
     this.width = w;
     this.height = h;
   }
